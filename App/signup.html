@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>COVID Signup Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  
+  <body class="back">
+
+    <!-- header -->
+    <header>
+      <a class="title_link" href="index.html"><h1>COVID info</h1></a>
+    </header>
+
+
+    <div class="container">
+    <div class="card">
+      <h2 style="margin-top: 2rem; text-align: center;">Registro</h2>
+      <hr class="title">
+      
+      <!-- article -->
+      <article style="text-align: center;">
+        <h3>Rellene sus datos</h3>
+        <!-- form -->
+        <form name="form_alta" id="form_alta" action="javascript:" onsubmit="onClicker(this)" method="post">
+          <fieldset>
+            <legend>Datos personales</legend>
+          <p>
+            <label><b>Nombre</b></label><br>
+            <input class="responsive" id="name" type="text" name="name"><br>
+            <p id="name_err">
+          </p>
+          <p>
+            <label><b>Apellido</b></label><br>
+            <input class="responsive" id="surname" type="text" name="surname"><br>
+            <p id="surname_err">
+          </p>
+          <p>
+            <label for="vaccinated"><b>Vacunado</b></label>
+              <br>
+              <input class= "check" id="vaccinated" type="checkbox" name="vaccinated">
+          </p>
+          </fieldset>
+          <fieldset>
+            <legend>Datos de contacto</legend>
+          <p>
+            <label for="email"><b>Email</b></label>
+            <br>
+            <input class="responsive" id="email" type="email" name="email"><br>
+            <p id="email_err">
+          </p>
+          <p>
+            <label for="telephone"><b>Teléfono</b></label>
+            <br>
+            <input class="responsive" id="telephone" type="tel" maxlength="15" name="telephone"><br>
+            <p id="telephone_err">
+          </p>
+          </fieldset>
+          <fieldset>
+            <legend>Datos de la cuenta</legend>
+          <p>
+            <label><b>Login</b></label><br>
+            <input class="responsive" id="uname" type="text" name="uname"><br>
+            <p id="uname_err">
+          </p>
+          <p>
+            <label><b>Contraseña</b></label><br>
+            <input class="responsive" id="password" type="password" name="password"><br>
+            <p id="password_err">
+          </p>
+          <p>
+            <label for="password2"><b>Vuelve a introducir la contraseña</b></label>
+            <br>
+            <input class="responsive" id="password2" type="password" name="password2"><br>
+            <p id="password2_err">
+          </p>
+          </fieldset>
+          <p id="error"></p>
+            <button class="button">Crear cuenta</button>
+            <button class="button" type="reset">Reiniciar formulario</button>
+            <a href="./index.html" class="button">Volver</a>
+        </form>
+      </article>
+    </div>
+  </div>
+  <script src="js/script_reg.js"></script>
+  </body>
+</html>

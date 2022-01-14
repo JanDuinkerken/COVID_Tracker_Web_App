@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>COVID Login Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Script -->
+    <script src="js/get_data.js"></script>
+  </head>
+  
+  <body class="back">
+
+    <!-- header -->
+    <header>
+	<a class="title_link" href="index.html"><h1>COVID info</h1></a>
+    </header>
+
+
+    <div class="container">
+    <div class="card">
+      <h2 style="margin-top: 2rem; text-align: center;">Login</h2>
+      <hr class="title">
+      
+      <!-- article -->
+      <article style="text-align: center;">
+        <h3>Introduzca sus credenciales</h3>
+
+        <form class=login action="javascript:" onsubmit="checkform();" method = "post">
+          <fieldset>
+            <legend>Credenciales</legend>
+          <p>
+            <label>Login *</label><br>
+            <input class="responsive" type="text" id="login" required aria-required="true">
+          </p>
+          <p>
+            <label>Contraseña *</label><br>
+            <input class="responsive" type="password" id="password" required aria-required="true">
+          </p>
+          </fieldset>
+          <p id="error"></p>
+          <p>
+            <button class="button" id="login_button">Iniciar sesión</button>
+          </p>
+          <p>
+	    <a href="./signup.html">Aún no tiene una cuenta? Registrese aquí</a>
+	  </p>
+        </form>
+      </article>
+    </div>
+  </div>
+  </body>
+</html>

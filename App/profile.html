@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <title>COVID Profile Info</title>
+</head>
+<body class="back"> 
+<header>
+      <a class="title_link" href="index.html"><h1>COVID info</h1></a>
+</header>
+<div class="container">
+	<div class="card">
+		<h2 style="margin-top: 2rem; text-align: center;">Info de usuario</h2>
+      		<hr class="title">
+		<article style="text-align: center;">
+			<h3><b>QR:</b></h3>
+			<div>
+			    <p><img id="qrcode" src="img/loading.gif" style="width: 30%; height: 30%;" alt="QR personal con datos"></p>
+			    <p><label id="login"><b>Login:</b></label></p>
+			    <p><label id="name"><b>Nombre:</b></label></p>
+			    <p><label id="surname"><b>Apellido:</b></label></p>
+			    <p><label id="email"><b>Email:</b></label></p>
+			    <p><label id="phone"><b>Teléfono:</b></label></p>
+			    <p><label id="vaccinated"><b>Vacunado:</b> </label></p>
+			    <p><table id="access_table">
+				    <tr>
+					<th>Instalación</th>
+					<th>Fecha</th>
+					<th>Hora</th>
+					<th class="PC">Temperatura</th>
+					<th class="PC">Tipo</th>
+				    </tr>
+				</table>
+			</div>
+		</article>
+	</div>
+</div>
+<p id="error"></p>
+</body>
+</html>
